@@ -11,36 +11,47 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>AI Quote Generator</h1>
-      <p>Instantly generate quotes to inspiration and motivation. Feel free to use it.</p>
-    </header>
-    <main>
-      <div class="input-ai">
-        <form>
-          <input
-            type="text"
-            placeholder="Please enter a topic for quotes"
-            class="text-input"
-            required
-          />
-          <input type="submit" value="generate quotes" class="generate-button" />
-        </form>
-      </div>
-      <div class="output-ai">
-        <p>Smile is beautiful</p>
-      </div>
-    </main>
+      <header>
+        <h1>AI Quote Generator</h1>
+        <p>
+          Instantly generate quotes to inspiration and motivation. Feel free to
+          use it.
+        </p>
+      </header>
+      <main>
+        <div class="input-ai">
+          <form id="generateForm">
+            <input
+              type="text"
+              placeholder="Please enter a topic for quotes"
+              class="text-input"
+              id="textInput"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="submit"
+              value="generate quotes"
+              class="generate-button"
+              id="generateButton"
+            />
+          </form>
+        </div>
+        <div class="output-ai" >
+          <p id="output"></p>
+        </div>
+      </main>
     </div>
-<div class="bottom-gradient-color"></div>
+    <div class="bottom-gradient-color"></div>
     <footer>
-      This project was coded by
+      This AI project was coded by
       <a href="https://somayyeh-portfolio.netlify.app/">Somayyeh Seyedi</a> and
       is open-sourced on
-      <a href="https://github.com/Somayyeh094/AI-Quote-Generator">Github</a>,
+      <a href="https://github.com/Somayyeh094/AI-Quote-Generator">GitHub</a>,
       hosted on <a href="https://quotesaigenerator.netlify.app/">Netlify</a>
     </footer>
 
