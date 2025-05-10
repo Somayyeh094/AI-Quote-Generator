@@ -64,7 +64,25 @@ header p {
 .generate-button:hover {
   box-shadow: 7px 8px 8px #cec2fa;
 }
+/* header */
 /* Div.output */
+.magic-pen {
+  font-size: 28px;
+  margin-top: 120px;
+  margin-left: 125px;
+  background-image: -webkit-linear-gradient(
+    70.6deg,
+    rgb(0, 82, 212),
+    rgb(67, 100, 247),
+    rgb(111, 177, 252)
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.magic-pen img{
+  position: relative;
+  top:10px
+}
 .output-ai {
   width: 1065px;
   height: 350px;
@@ -87,7 +105,7 @@ header p {
   padding-right: 20px;
   line-height: 2;
 }
-.hidden{
+.hidden {
   display: none;
 }
 .blink {
@@ -120,7 +138,7 @@ footer {
   font-size: 14px;
   position: absolute;
   top: 760px;
-  left:400px;
+  left: 400px;
   color: rgb(82, 82, 82);
 }
 a {
