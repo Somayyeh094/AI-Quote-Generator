@@ -68,8 +68,8 @@ header p {
 /* Div.output */
 .magic-pen {
   font-size: 28px;
-  margin-top: 120px;
-  margin-left: 125px;
+  margin-top: 150px;
+  margin-left: 80px;
   background-image: -webkit-linear-gradient(
     70.6deg,
     rgb(0, 82, 212),
@@ -79,15 +79,51 @@ header p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.magic-pen img{
+.rotating {
   position: relative;
-  top:10px
+  bottom: 12px;
 }
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0geg);
+    -o-transform: rotate(0geg);
+    transform: rotate(0geg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(2deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0geg);
+    -moz-transform: rotate(0geg);
+    -webkit-transform: rotate(0geg);
+    -o-transform: rotate(0geg);
+    transform: rotate(0geg);
+  }
+  to {
+    -ms-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
 .output-ai {
   width: 1065px;
   height: 350px;
   margin-top: 35px;
-  margin-left: 180px;
+  margin-left: 120px;
   border: 2px solid transparent;
   border-radius: 8px;
   background-image: linear-gradient(white, white),
@@ -101,8 +137,7 @@ header p {
 }
 
 .output-ai p {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding:10px 40px;
   line-height: 2;
 }
 .hidden {
