@@ -85,14 +85,14 @@ header p {
 }
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
-    -webkit-transform: rotate(0geg);
-    -o-transform: rotate(0geg);
-    transform: rotate(0geg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(20deg);
     -o-transform: rotate(20deg);
-    transform: rotate(2deg);
+    transform: rotate(20deg);
   }
 }
 @keyframes rotating {
@@ -176,7 +176,7 @@ footer {
   left: 400px;
   color: rgb(82, 82, 82);
 }
-a {
+footer a {
   color: #7731d8;
 }
 /* Footer */
