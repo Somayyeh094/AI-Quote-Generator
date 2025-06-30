@@ -1,26 +1,28 @@
 # Quotes AI Generator 🤖👩🏻‍💻🧾
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_DEPLOY_ID_HERE/deploy-status)](https://app.netlify.com/sites/quotesaigenerator/deploys)
+
+[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://quotesaigenerator.netlify.app/)
 
 A web application that generates inspirational quotes using AI. Built with vanilla JavaScript and integrated with an AI API.
 
-## Features
+## Features ✨
 
 - Generate unique, AI-powered quotes on demand
 - Simple, intuitive user interface
 - Fully responsive design
 - Fast performance with vanilla JavaScript
 - Easy to customize and extend
+- Copy text feature
 
-## Technologies Used
+## Technologies Used 🛠️
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- [AI API Name] (replace with actual API used)
-- Netlify for hosting
+- SheCodes'AI API
+- Deployment: Netlify 
 
-## Installation
+## Installation 💿💻
 
 No installation required - simply visit [https://quotesaigenerator.netlify.app](https://quotesaigenerator.netlify.app) to use the application.
 
@@ -28,29 +30,23 @@ For local development:
 
 1. Clone this repository
 2. Open `index.html` in your browser
-3. (If using API) Add your API key in `config.js`
+3. (If using API) Add your API key in `index.js`
 
-## Usage
+## Usage 📢😎
 
 1. Enter any topic or keywords in the input field
 2. Click "Generate Quote"
-3. View your unique AI-generated quote
-4. Generate again for new results
+3. View your unique AI-generated quotes
+4. Copy AI-generated quotes
+5. Generate again for new results
 
-## Project Structure
-
-
-## Contributing
+## Contributing 🤝
 
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
 
-## License
+## Credit 🙌
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [Name of AI API/service used]
-- Inspiration from [quote generators you referenced]
+- SheCodes'AI API
+- [Typewriter](https://github.com/tameemsafi/typewriterjs)
 
 
