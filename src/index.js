@@ -6,6 +6,10 @@ function generateQuote(response) {
     delay: 1,
     cursor: "",
   });
+  document.querySelector("#copy-btn").addEventListener("click", () => {
+    navigator.clipboard.writeText(output.innerText);
+    alert("Quotes copied!");
+  });
 }
 
 function callApi(event) {
