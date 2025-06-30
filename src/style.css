@@ -5,7 +5,7 @@ body {
 /* Header */
 header {
   text-align: center;
-  margin: 5% 2%;
+  margin: 5vh 2vw;
 }
 header p {
   color: rgb(107, 106, 106);
@@ -74,7 +74,6 @@ form {
 .magic-pen {
   font-size: 24px;
   margin: 9% 7%;
-  
 
   background-image: -webkit-linear-gradient(
     70.6deg,
@@ -127,10 +126,14 @@ form {
 }
 
 .output-ai {
-  width: 1065px;
-  height: 350px;
-  margin-top: 35px;
-  margin-left: 120px;
+  width: 70vw;
+  height: 48vh;
+  overflow: auto;
+  margin-top: 3vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-bottom: 0;
+  padding-top: 5px;
   border: 2px solid transparent;
   border-radius: 8px;
   background-image: linear-gradient(white, white),
@@ -144,8 +147,10 @@ form {
 }
 
 .output-ai p {
-  padding: 10px 40px;
+  padding: 5px 40px 0 40px;
   line-height: 2;
+  margin-bottom: 0;
+  text-align: justify;
 }
 .hidden {
   display: none;
@@ -212,10 +217,30 @@ footer a {
   .rotating {
     width: 40px;
   }
+  .output-ai {
+    width: 80vw;
+    margin: 4vh 8vw 0 8vw;
+    height: 30vh;
+    overflow: auto;
+  }
+  .output-ai p {
+    padding: 2vh 5px 0 5px;
+    font-size: 18px;
+  }
 }
 @media (max-width: 768px) {
   .magic-pen {
     margin-left: 5%;
+  }
+  .output-ai {
+    width: 80vw;
+    margin: 3vh 8vw 0 8vw;
+    height: 30vh;
+    overflow: auto;
+  }
+  .output-ai p {
+    padding: 2vh 5vh 0 5vh;
+    font-size: 16px;
   }
 }
 @media (max-width: 540px) {
@@ -230,5 +255,16 @@ footer a {
   .span-magic-pen {
     display: block;
     text-align: center;
+  }
+  .output-ai {
+    width: 80vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    height: 50vh;
+    overflow: auto;
+  }
+  .output-ai p {
+    padding: 5px 5px 0 5px;
+    font-size: 14px;
   }
 }
