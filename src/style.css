@@ -1,5 +1,8 @@
 body {
   font-family: "Noto Sans", "sans-serif";
+  display: grid;
+          grid-template-rows: auto 1fr auto;
+          min-height: 100vh;
 }
 /* Header */
 header {
@@ -13,13 +16,16 @@ header p {
 /* Header */
 /* Main */
 /* Form */
+
+form {
+  text-align: center;
+}
 .text-input {
-  padding: 16px;
-  width: 60%;
+  padding: 15px;
+  width: 40%;
   font-family: "Noto Sans", "sans-serif";
   font-size: 18px;
   font-style: italic;
-  margin-left: 180px;
   border: 2px solid transparent;
   border-radius: 8px;
   background-image: linear-gradient(white, white),
@@ -35,7 +41,7 @@ header p {
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 16px 20px;
+  padding: 17px 20px;
   font-family: "Noto Sans", "sans-serif";
   font-size: 16px;
   margin-left: 10px;
@@ -64,7 +70,7 @@ header p {
 .generate-button:hover {
   box-shadow: 7px 8px 8px #cec2fa;
 }
-/* header */
+
 /* Div.output */
 .magic-pen {
   font-size: 28px;
@@ -137,7 +143,7 @@ header p {
 }
 
 .output-ai p {
-  padding:10px 40px;
+  padding: 10px 40px;
   line-height: 2;
 }
 .hidden {
@@ -160,23 +166,37 @@ header p {
 /* Main */
 /* Gradient box */
 .bottom-gradient-color {
-  width: 97%;
   background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
-  height: 80px;
-  position: absolute;
-  top: 670px;
-  left: 20px;
+  width: 98%;
+  height: 10%;
+  position: fixed;
+  bottom: 5%;
+  left: 1vw;
 }
 /* Gradient box */
 /* Footer */
 footer {
   font-size: 14px;
-  position: absolute;
-  top: 760px;
-  left: 400px;
   color: rgb(82, 82, 82);
+  text-align: center;
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  left: 0;
 }
+
 footer a {
   color: #7731d8;
 }
 /* Footer */
+
+@media (max-width: 960px) {
+  .text-input,
+  .generate-button,
+  ::placeholder {
+    font-size: 12px;
+  }
+  footer{
+    font-size: 10px;
+  }
+}
