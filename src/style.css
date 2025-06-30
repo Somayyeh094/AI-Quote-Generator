@@ -7,8 +7,8 @@ body {
 /* Header */
 header {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 header p {
   color: rgb(107, 106, 106);
@@ -70,12 +70,19 @@ form {
 .generate-button:hover {
   box-shadow: 7px 8px 8px #cec2fa;
 }
-
+/* main{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  bottom: 30%;
+} */
 /* Div.output */
 .magic-pen {
   font-size: 28px;
-  margin-top: 150px;
-  margin-left: 80px;
+  /* position: relative;
+  top: 50px;
+  left: 0; */
+  /* width: 100%; */
   background-image: -webkit-linear-gradient(
     70.6deg,
     rgb(0, 82, 212),
@@ -198,5 +205,15 @@ footer a {
   }
   footer{
     font-size: 10px;
+  }
+  .magic-pen {
+    font-size: 18px;}
+    header p{
+      font-size: 14px;
+    }
+}
+@media (max-width: 512px) {
+  header{
+    margin-top: 10%;
   }
 }
