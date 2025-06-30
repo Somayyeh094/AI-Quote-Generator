@@ -1,14 +1,11 @@
 body {
   font-family: "Noto Sans", "sans-serif";
-  display: grid;
-          grid-template-rows: auto 1fr auto;
-          min-height: 100vh;
+  min-height: 100%;
 }
 /* Header */
 header {
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% 2%;
 }
 header p {
   color: rgb(107, 106, 106);
@@ -16,7 +13,9 @@ header p {
 /* Header */
 /* Main */
 /* Form */
-
+main {
+  margin: 0 2%;
+}
 form {
   text-align: center;
 }
@@ -70,19 +69,13 @@ form {
 .generate-button:hover {
   box-shadow: 7px 8px 8px #cec2fa;
 }
-/* main{
-  position: fixed;
-  width: 100%;
-  height: auto;
-  bottom: 30%;
-} */
+
 /* Div.output */
 .magic-pen {
-  font-size: 28px;
-  /* position: relative;
-  top: 50px;
-  left: 0; */
-  /* width: 100%; */
+  font-size: 24px;
+  margin: 9% 7%;
+  
+
   background-image: -webkit-linear-gradient(
     70.6deg,
     rgb(0, 82, 212),
@@ -95,6 +88,7 @@ form {
 .rotating {
   position: relative;
   bottom: 12px;
+  width: 60px;
 }
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
@@ -177,7 +171,7 @@ form {
   width: 98%;
   height: 10%;
   position: fixed;
-  bottom: 5%;
+  bottom: 30px;
   left: 1%;
 }
 /* Gradient box */
@@ -187,9 +181,9 @@ footer {
   color: rgb(82, 82, 82);
   text-align: center;
   position: fixed;
-  bottom: 1%;
-  width: 100%;
+  bottom: 5px;
   left: 0;
+  width: 100%;
 }
 
 footer a {
@@ -203,17 +197,38 @@ footer a {
   ::placeholder {
     font-size: 12px;
   }
-  footer{
+  footer {
     font-size: 10px;
   }
+
   .magic-pen {
-    font-size: 18px;}
-    header p{
-      font-size: 14px;
-    }
+    font-size: 14px;
+    margin-top: 3%;
+    margin-left: 15%;
+  }
+  header p {
+    font-size: 14px;
+  }
+  .rotating {
+    width: 40px;
+  }
 }
-@media (max-width: 512px) {
-  header{
-    margin-top: 10%;
+@media (max-width: 768px) {
+  .magic-pen {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 540px) {
+  header {
+    margin: 10% 5px;
+  }
+  .magic-pen {
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .span-magic-pen {
+    display: block;
+    text-align: center;
   }
 }

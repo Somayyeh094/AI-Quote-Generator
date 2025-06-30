@@ -21,56 +21,53 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>AI Quote Generator</h1>
-        <p>
-          Instantly generate quotes to inspiration and motivation. Feel free to
-          use it.
-        </p>
-      </header>
-      <main>
-        <div class="input-ai">
-          <form id="generateForm">
-            <input
-              type="text"
-              placeholder="Please Enter a topic for quotes, e.g., hapiness or life ..."
-              class="text-input blink-one"
-              id="textInput"
-              required
-              autocomplete="off"
-            />
-            <input
-              type="submit"
-              value="generate quotes"
-              class="generate-button"
-              id="generateButton"
-            />
-          </form>
-        </div>
-        <div class="magic-pen" id="magicPenDiv">
-          <img
-            src="images/magic-stick (1).svg"
-            alt="magic pen"
-            width="60px"
-            class="rotating"
+    <header>
+      <h1>AI Quote Generator</h1>
+      <p>
+        Instantly generate quotes to inspiration and motivation. Feel free to
+        use it.
+      </p>
+    </header>
+    <main>
+      <div class="input-ai">
+        <form id="generateForm">
+          <input
+            type="text"
+            placeholder="Please Enter a topic for quotes, e.g., hapiness or life ..."
+            class="text-input blink-one"
+            id="textInput"
+            required
+            autocomplete="off"
           />
-          <span class="span-magic-pen" id="magicPen"></span>
-        </div>
-        <div class="output-ai hidden" id="outputAi">
-          <p id="output"></p>
-        </div>
-      </main>
-      <div class="bottom-gradient-color"></div>
-      <footer>
-        This AI project was powered by SheCoes' AI API and is open-sourced on
-        <a
-          href="https://github.com/Somayyeh094/AI-Quote-Generator"
-          target="_blank"
-          >GitHub</a
-        >
-      </footer>
-    </div>
+          <input
+            type="submit"
+            value="generate quotes"
+            class="generate-button"
+            id="generateButton"
+          />
+        </form>
+      </div>
+      <div class="magic-pen" id="magicPenDiv">
+        <img
+          src="images/magic-stick (1).svg"
+          alt="magic pen"
+          class="rotating"
+        />
+        <span class="span-magic-pen" id="magicPen"></span>
+      </div>
+      <div class="output-ai hidden" id="outputAi">
+        <p id="output"></p>
+      </div>
+    </main>
+    <div class="bottom-gradient-color"></div>
+    <footer>
+      This AI project was powered by SheCoes' AI API and is open-sourced on
+      <a
+        href="https://github.com/Somayyeh094/AI-Quote-Generator"
+        target="_blank"
+        >GitHub</a
+      >
+    </footer>
 
     <script src="src/index.js"></script>
   </body>
