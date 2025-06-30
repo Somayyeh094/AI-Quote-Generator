@@ -126,14 +126,15 @@ form {
 }
 
 .output-ai {
-  width: 70vw;
+  width: 60vw;
   height: 48vh;
   overflow: auto;
   margin-top: 3vh;
-  margin-left: 12vw;
-  margin-right: 12vw;
+  margin-left: 17.5vw;
+  margin-right: 17.5vw;
   margin-bottom: 0;
   padding-top: 5px;
+  text-align: justify;
   border: 2px solid transparent;
   border-radius: 8px;
   background-image: linear-gradient(white, white),
@@ -150,7 +151,7 @@ form {
   padding: 5px 40px 0 40px;
   line-height: 2;
   margin-bottom: 0;
-  text-align: justify;
+  
 }
 .hidden {
   display: none;
@@ -242,6 +243,9 @@ footer a {
     padding: 2vh 5vh 0 5vh;
     font-size: 16px;
   }
+  ::placeholder {
+    font-size: 10px;
+  }
 }
 @media (max-width: 540px) {
   header {
@@ -260,11 +264,25 @@ footer a {
     width: 80vw;
     margin-left: 8vw;
     margin-right: 8vw;
-    height: 50vh;
+    height: 41vh;
     overflow: auto;
   }
   .output-ai p {
     padding: 5px 5px 0 5px;
     font-size: 14px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-input {
+    width: 95%;
+    margin:0 0 10px 10px;
+  }
+  ::placeholder {
+    font-size: 14px;
+  }
+  .generate-button{
+    width: 95%;
   }
 }
